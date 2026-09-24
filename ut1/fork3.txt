@@ -1,0 +1,20 @@
+printf("Inicio\n");
+pid_t pid = fork();
+printf("Después del fork\n");
+if (pid == 0) {
+ printf("Soy el hijo\n");
+} else {
+ printf("Soy el padre\n");
+}
+printf("Fin\n");
+
+a) ¿Cuántos procesos existen?
+2 
+
+b) ¿ qué instrucciones ejecuta cada uno?
+el hijo :  escribe después del fork soy el hijo y fin.
+el padre: escribe inicio, después del fork,soy el padre y fin.
+
+c) ¿cuántas veces aparece cada mensaje y qué partes de la salida pueden aparecer en distinto
+orden?
+inicio una vez ,después el del fork aparece dos veces aleatorio y soy el padre o soy el hijo aleatorio  y fin dos veces aleatorio depende de que proceso se ejecute y se van intercalando .
