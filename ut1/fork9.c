@@ -13,7 +13,7 @@ int main() {
         printf("P2 empezando\n");
         sleep(5);
         printf("P2 terminando\n");
-        exit(0); 
+        
     } else {
         
         pid = fork();
@@ -21,7 +21,7 @@ int main() {
             printf("P3 empezando\n");
             sleep(2);
             printf("P3 terminando\n");
-            exit(0);
+            
         } else {
             
             pid = fork();
@@ -29,7 +29,7 @@ int main() {
                 printf("P4 empezando\n");
                 sleep(4);
                 printf("P4 terminando\n");          
-                exit(0);
+                
             } else {
                 wait(NULL);
                 wait(NULL);
@@ -38,7 +38,7 @@ int main() {
             }
         }
     } 
-    return 0;
+    exit(0);
 }
 
 //a) Sí. El orden será P3 (2s), luego P4 (4s) y por último P2 (5s).
