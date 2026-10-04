@@ -18,14 +18,14 @@ void main() {
            pid_hijos=getpid();
 
            printf("Soy el proceso 3 mi pid es=%d y el de mi padre es =%d \n",pid_hijos,pid_padre);
-           exit(0);
+          
 
         }else {
             wait(NULL);
             pid_hijos=getpid();
             pid_padre= getppid();
             printf("Soy el proceso 2 mi pid es =%d y el de mi padre es=%d \n",pid_hijos,pid_padre);
-            exit(0);
+         
         }
 
   }else {
