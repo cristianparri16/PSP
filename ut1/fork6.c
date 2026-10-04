@@ -27,14 +27,14 @@ if(pid==0){
         wait(NULL);
     }
 
-exit(0);
+
 
 }
 
 
 
 
-
+exit(0);
 
 
 }
